@@ -7,6 +7,8 @@
 </head>
 <body>
     <p id="demo">Pepito</p>
+    <p id="name"></p>
+    <p id="age"></p>
 
     <script>
         document.getElementById("demo").innerHTML = "Juan Restrepo"
@@ -15,6 +17,24 @@
         alert("Juan Manuel")
         //using the console.log()
         console.log("Hello from console!")
+
+        //creating statements 
+        let name = "Juan" 
+        var lastName = "Restrepo"
+        const age = "24"
+        let number_1,number_2,result
+
+        number_1 = 10
+        number_2 = 20
+        result = number_1 + number_2
+
+
+        name  = "Juan Manuel"
+        lastName = "Restrepo Moreno"
+        //age = 25
+
+        document.getElementById("name").innerHTML = name + " " +lastName
+        document.getElementById("age").innerHTML = age
     </script>
 </body>
 </html>
