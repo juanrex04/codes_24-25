@@ -19,3 +19,7 @@ else:
 #append a new item
 list_names.append("Luciana")
 print(list_names)
+
+#insert a new item in a specified position
+list_names.insert(2, "Samuel")
+print(list_names)
