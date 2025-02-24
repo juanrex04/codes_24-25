@@ -23,6 +23,19 @@ the menu is:
 """
 
 repeat = str("y")
+names_enterprice = ["Juan"]
+
+#function to add new item last position
+def new_item_last_position(newValue):
+    names_enterprice.append(newValue)
+    print (names_enterprice)
+    print("____________________________________")
+
 
 while repeat == "y":
-    option = int(input("What option do you want?"))
+    option = int(input("What option do you want? \n1.Input a new value in the last position \n2.Input new value specific position \n3.Remove a value in last position \n4.Remove a value using the index \n5.Remove a value using the item \n6.Print the list \n7.Close the program (y/n) \n"))
+    print("____________________________________")
+    
+    if option == 1:
+        newValue = str(input("Input a new value for last position ")) 
+        new_item_last_position(newValue)
