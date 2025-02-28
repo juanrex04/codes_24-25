@@ -11,6 +11,8 @@
 
     <button id="addition" onclick="addition()">Addition +</button>
     <button id="substraction" onclick="substraction()">Substraction -</button>
+    <button id="exponentiation" onclick="expo()">Exponentiation **</button>
+    <button id="modulus" onclick="mod()">Modulus %</button>
 
     <h1 id="result">Result:</h1>
 
@@ -34,6 +36,18 @@
       function substraction(){
         let result = number_1 - number_2
         
+        document.getElementById("result").textContent = "Result: " + result
+      }
+
+      function expo(){
+        let result = number_1 ** number_2
+
+        document.getElementById("result").textContent = "Result: " + result
+      }
+
+      function mod(){
+        let result = number_1 % number_2
+
         document.getElementById("result").textContent = "Result: " + result
       }
     </script>
