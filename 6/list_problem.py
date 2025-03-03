@@ -38,6 +38,12 @@ def new_item_specified_position():
     position = int(input("Now, write which position do you want"))
     names_enterprice.insert(position, newValue)
     print("-------------------------------------") 
+    
+#function to remove the item in the last position
+def remove_last_item():
+    names_enterprice.pop()
+    print(names_enterprice)
+    print("--------------------------------------")
 
 while repeat == "y":
     option = str(input("What option do you want? \n1.Input a new value in the last position \n2.Input new value specific position \n3.Remove a value in last position \n4.Remove a value using the index \n5.Remove a value using the item \n6.Print the list \n7.Close the program (y/n) \n"))
@@ -48,3 +54,5 @@ while repeat == "y":
         new_item_last_position(newValue)
     elif option == "2":
         new_item_specified_position()
+    elif option == "3":
+        remove_last_item()
