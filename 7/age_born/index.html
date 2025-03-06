@@ -7,10 +7,14 @@
 </head>
 <body>
     
-    <h1>Calculate your born date!</h1>
+    <h1>Calculate how much pay!</h1>
 
-    <label for="year_born">Year born</label>
-    <input type="number" id="year_born">
+    <label for="total_product">Total products</label>
+    <input type="number" id="total_product" oninput="updateValue()">
+
+    <p id="print_result"></p>
+
+    <button onclick="totalPay()">Calculate how much pay...</button>
     <!--script-->
     <script src="./script.js"></script>
 </body>
