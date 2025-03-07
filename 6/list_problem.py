@@ -45,6 +45,22 @@ def remove_last_item():
     print(names_enterprice)
     print("--------------------------------------")
 
+#function to remove a item using the index
+def remove_item_index():
+    print(names_enterprice)
+    choice = int(input("Choice the position that you want to delete"))
+    names_enterprice.pop(choice)
+    print(names_enterprice)
+    print("---------------------------------")
+
+#function to remove a item using the value
+def remove_item_value():
+    print(names_enterprice)
+    choice = str(input("Write the item that you want to remove"))
+    names_enterprice.remove(choice)
+    print(names_enterprice)
+    print("----------------------------------")
+
 while repeat == "y":
     option = str(input("What option do you want? \n1.Input a new value in the last position \n2.Input new value specific position \n3.Remove a value in last position \n4.Remove a value using the index \n5.Remove a value using the item \n6.Print the list \n7.Close the program (y/n) \n"))
     print("-------------------------------------")   
@@ -56,3 +72,7 @@ while repeat == "y":
         new_item_specified_position()
     elif option == "3":
         remove_last_item()
+    elif option == "4":
+        remove_item_index()
+    elif option == "5":
+        remove_item_value()
