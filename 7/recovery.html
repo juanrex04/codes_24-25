@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Calculate your birth year</h1>
+
+    <input type="text" id="name" oninput="updateValues()" />
+    <input type="number" id="age" oninput="updateValues()" />
+
+    <button id="calculate" onclick="calculateBirth()">Calculate</button>
+
+    <p id="result">Your birth year is:</p>
+
+    <!--script-->
+    <script>
+      let name = "";
+      let age = 0;
+      let currentYear = new Date().getFullYear;
+
+      function updateValues() {
+        name = document.getElementById("name").value;
+        age = parseInt(document.getElementById("age").value);
+      }
+
+      function calculateBirth() {
+        let result = currentYear - age;
+        document.getElementById("result").textContent = name + " your birth year is: " + result;
+      }
+    </script>
+  </body>
+</html>
