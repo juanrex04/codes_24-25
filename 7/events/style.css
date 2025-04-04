@@ -1,3 +1,18 @@
+/*General styles*/
 h1{
     color: #050563;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    margin: 5px;
+    padding: 5px;
+    background-color: #3189cb;
+    border-radius: 10%;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
 }
