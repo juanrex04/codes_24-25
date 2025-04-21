@@ -17,5 +17,10 @@ day, month, year = userDate.split("/")
 
 if int(year) > date: #check if the year is greater than the current year
     print("The year that you enter is greater than the current year")
-elif len(userDate) < 8: #check if the length of the date is less than 8, we use the method len() to check the length of the string
-    print("The date that you enter has a length less than 8")
+elif len(userDate) < 8 or len(userDate) >= 9: #check if the length of the date is less than 8 or greater than 9, we use the method len() to check the length of the string
+    print("The date that you enter has a length less than 8 or greater than 9")
+    
+calculatedAge = date - int(year) #calculate the age by subtracting the year pass for the user of the current year
+
+print(f"Your birth date is {userDate} and your age is {calculatedAge} years") 
+#print the date and the age of the user
