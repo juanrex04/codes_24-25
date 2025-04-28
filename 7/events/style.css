@@ -8,6 +8,14 @@
 }
 
 /*General styles*/
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   color: #050563;
 }
@@ -22,8 +30,18 @@ a {
 }
 
 .menu {
+  justify-content: center;
+}
+
+.container{
+  text-align: center;
+}
+
+.row{
   display: flex;
   justify-content: center;
+  gap:1rem;
+  margin: 1rem 0;
 }
 
 button {
@@ -34,4 +52,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+button:hover{
+  background-color: #17719f;
 }
