@@ -4,10 +4,17 @@ some medical professionals to manage
 information and processes. We need to create a menu to know which option the doctor wants to choose.
 """
 
+#define the variables to use in the software
+patientList = [] #list to store the patients
+
+
 #functions to use in the software
 #function to register a patient
 def registerPatient():
-    print("Welcome to the patient registration")
+    print("Welcome to the patient registration") 
+    print("Please enter the patient's name: ")
+    patientList = str(input())
+    
     
 #software menu
 print("Welcome, doctor!")
