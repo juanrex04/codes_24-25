@@ -14,8 +14,16 @@ def registerPatient():
     print("Welcome to the patient registration") 
     print("Please enter the patient's name: ")
     patientList = str(input())
+    for i in range(0, len(patientList)):
+        print(f"Patient: {patientList[i]}")
     
-    
+#function to calculate BMI (Body Mass Index)
+def calculateBMI():
+    print("Welcome to the BMI calculator")
+    weight = float(input("Enter the weight in kg: "))
+    height = float(input("Enter the height in meters: "))
+    bmi = weight / (height ** 2)
+
 #software menu
 print("Welcome, doctor!")
 print("Please choose an option:")
