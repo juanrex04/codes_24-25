@@ -6,17 +6,22 @@ information and processes. We need to create a menu to know which option the doc
 
 #define the variables to use in the software
 patientList = [] #list to store the patients
-
+diagnosisDetails = dict( 
+    fever = "Temperature above 38 degrees Celsius"
+)
 
 #functions to use in the software
 #function to register a patient
 def registerPatient():
     print("Welcome to the patient registration") 
     print("Please enter the patient's name: ")
-    patientList = str(input())
+    global patientList 
+    name = str(input())
+    patientList.append(name)
     for i in range(0, len(patientList)):
-        print(f"Patient: {patientList[i]}")
-    
+        print(f"Patients: {patientList[i]}")
+
+
 #function to calculate BMI (Body Mass Index)
 def calculateBMI():
     print("Welcome to the BMI calculator")
