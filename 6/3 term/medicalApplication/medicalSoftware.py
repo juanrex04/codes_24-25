@@ -7,7 +7,9 @@ information and processes. We need to create a menu to know which option the doc
 #define the variables to use in the software
 patientList = [] #list to store the patients
 diagnosisDetails = dict( 
-    fever = "Temperature above 38 degrees Celsius"
+    fever = "Temperature above 38 degrees Celsius",
+    lab = "Blood test, urine test, or visual inspection",
+    treatment = "Rest, hydration, and antipyretics"
 )
 
 #functions to use in the software
@@ -42,7 +44,7 @@ print("Welcome, doctor!")
 print("Please choose an option:")
 print("1. Register a patient")
 print("2. Calculate BMI (Body Mass Index)")
-
+print("3. Generate a diagnosis")
 #create a variable to store the option chosen by the doctor
 userOption = int(input("Enter the option number: "))
 
@@ -54,3 +56,11 @@ elif userOption == 2:
     #function to calculate BMI
     print("Calculate BMI (Body Mass Index)")
     calculateBMI()
+elif userOption == 3:
+    #Give a diagnosis to a patient
+    print("Give a diagnosis to a patient")
+    diagnosis = str(input("Choose a diagnosis: fever, lab, treatment: "))
+    if diagnosis in diagnosisDetails:
+        print(f"Diagnosis is: {diagnosisDetails[diagnosis]}")
+    else:
+        print("Diagnosis not found")
