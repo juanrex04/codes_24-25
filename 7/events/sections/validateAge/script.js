@@ -17,7 +17,7 @@ function calculateAge(){
     }
 
     //Need to fix the length as a property
-    if(length(fuserYear) <= 3 || length(fuserYear) >= 5){
+    if(fuserYear.toString().length <= 3 || fuserYear.toString().length >= 5){
         alert("The length of the year are greater or less than the system except");
         return;
     }
