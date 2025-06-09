@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <title>Parking system School</title>
+  </head>
+  <body>
+    <h1 class="text-center">Parking system</h1>
+    <div class="container text-center d-flex justify-content-center">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <label class="my-1" for="entryHour">Entry Hour</label>
+          <input
+            id="entryHour"
+            type="number"
+            class="form-control my-2"
+            placeholder="Write the entry hour"
+          />
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="my-1" for="exitHour">Exit hour</label>
+          <input
+            id="exitHour"
+            type="number"
+            class="form-control my-2"
+            placeholder="Write the exit hour"
+          />
+        </div>
+
+        <div class="col-12 my-5">
+          <select
+            class="btn btn-secondary dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            name="vehicleTypeSelector"
+            id="vehicleType"
+          >
+            <option class="dropdown-item" value="">
+              Select a type vehicle
+            </option>
+            <option value="car">Car</option>
+            <option value="motor">Motorcycle</option>
+            <option value="bike">Bicycle</option>
+          </select>
+        </div>
+
+        <button class="btn btn-primary" id="calculate">
+          Calculate the total to pay
+        </button>
+        <div class="my-5">
+          <h1 id="result" class="display-6">
+            Fill the inputs using the 24 format to the hours, select a vehicle and then press the button to calculate the payment
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!--script-->
+    <script src="./script.js"></script>
+  </body>
+</html>
